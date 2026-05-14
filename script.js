@@ -65,26 +65,6 @@ let words = [
     "bottle",
 ];
 
-let selectedWord = words[Math.floor(Math.random() * words.length)];
-
-let randomIndex = Math.floor(Math.random() * selectedWord.length);
-
-let hintLetter = selectedWord[randomIndex];
-
-let displayWord = "";
-
-for(let i = 0; i < selectedWord.length; i++) {
-
-    if(selectedWord[i] === hintLetter) {
-        displayWord += selectedWord[i] + " ";
-    } else {
-        displayWord += "_ ";
-    }
-}
-
-document.getElementById("word").innerText = displayWord;
-
-
 let computer =
 words[Math.floor(Math.random() * words.length)];
 
