@@ -1,0 +1,187 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg,#141e30,#243b55);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    color:white;
+}
+
+.container{
+    width:450px;
+    background:rgba(255,255,255,0.08);
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 0 20px rgba(0,0,0,0.4);
+}
+
+h1{
+    margin-bottom:20px;
+    font-size:40px;
+}
+
+#word{
+    font-size:35px;
+    letter-spacing:8px;
+    margin:20px 0;
+}
+
+input{
+    padding:12px;
+    width:70px;
+    text-align:center;
+    font-size:22px;
+    border:none;
+    border-radius:10px;
+    outline:none;
+}
+
+button{
+    padding:12px 20px;
+    border:none;
+    border-radius:10px;
+    background:#00c853;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    margin-left:10px;
+}
+
+button:hover{
+    background:#00a844;
+
+}
+
+#resetBtn{
+    background: #ff1744;
+    cursor:pointer;
+}
+
+#resetBtn:hover{
+    background: #d50000;
+    cursor:pointer;
+}
+
+#message{
+    margin-top:20px;
+    font-size:22px;
+}
+
+#chance{
+    margin-top:10px;
+    font-size:18px;
+}
+
+/* Hangman Drawing */
+
+.hangman{
+    position:relative;
+    width:200px;
+    height:250px;
+    margin:20px auto;
+}
+
+.base{
+    width:120px;
+    height:8px;
+    background:white;
+    position:absolute;
+    bottom:0;
+    left:20px;
+}
+
+.pole{
+    width:8px;
+    height:242px;
+    background:white;
+    position:absolute;
+    left:40px;
+    bottom:0;
+}
+
+.top{
+    width:100px;
+    height:8px;
+    background:white;
+    position:absolute;
+    left:40px;
+    top:0;
+}
+
+.rope{
+    width:4px;
+    height:35px;
+    background:white;
+    position:absolute;
+    left:136px;
+    top:8px;
+}
+
+.head{
+    width:40px;
+    height:40px;
+    border:5px solid white;
+    border-radius:50%;
+    position:absolute;
+    left:116px;
+    top:40px;
+    display:none;
+}
+
+.body{
+    width:5px;
+    height: 75px;
+    background:white;
+    position:absolute;
+    left:136px;
+    top:85px;
+    display:none;
+}
+
+.left-arm{
+    width:50px;
+    height:5px;
+    background:white;
+    position:absolute;
+    left:92px;
+    top:105px;
+    transform:rotate(30deg);
+    display:none;
+}
+
+.right-arm{
+    width:50px;
+    height:5px;
+    background:white;
+    position:absolute;
+    left:132px;
+    top:105px;
+    transform:rotate(-30deg);
+    display:none;
+}
+
+.left-leg{
+    width:50px;
+    height:5px;
+    background:white;
+    position:absolute;
+    left:92px;
+    top:170px;
+    transform:rotate(-30deg);
+    display:none;
+}
+
+.right-leg{
+    width:50px;
+    height:5px;
+    background:white;
+    position:absolute;
+    left:132px;
+    top:170px;
+    transform:rotate(30deg);
+    display:none;
+}
